@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+  #endmodal {
+    width: 30%;
+  }
+  #clickMe {
+    position: absolute;
+    z-index: 9999;
+    padding: 10px;
+    outline: none;
+    border: none;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px black;
+    font-size: large;
+    border-radius: 13px;
+    background-color: rgba(53, 0, 86);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: monospace, Courier, "Courier New";
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 20px black;
+    text-shadow: 10px 10px 5px rgba(146, 145, 145, 0.5);
+    height: 10%;
+    width: 85vw;
+    overflow: hidden;
+    line-height: 68.4px;
+    transition: ease 0.34s;
+    animation: blindShadow 5s linear infinite;
+  }
+  @keyframes textTyping {
+    0%,
+    90%,
+    100% {
+      width: 0px;
+    }
+    30%,
+    60% {
+      width: 100%;
+    }
+  }
+  #clickMe div {
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 0px 0px #ffffff;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    animation: textTyping 5s linear infinite;
+  }
+  @keyframes textTyping {
+    0%,
+    90%,
+    100% {
+      width: 0px;
+    }
+    30%,
+    60% {
+      width: 100%;
+    }
+  }
+  #firework .intro {
+    font-size: 16px !important;
+  }
+  #firework .main {
+    font-size: 7px !important;
+  }
+  #modal #bodymodal{
+    font-size: 18px;
+  }
+  #backgroundFlower{
+    height:100%;
+    width:100%;
+    top:70%;
+    transform: translateY(-50%);
+  }
+  #backgroundFlower>img{
+    height:80%;  
+    /* width: 100%; */
+    opacity: 0.7;
+  }
+}
