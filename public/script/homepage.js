@@ -1,6 +1,5 @@
 if (document.querySelector(".container").offsetWidth <= 500) {
-  document.querySelector(".background").src =
-    "../dahan/8th-March/Images/background-phone.jpg";
+  document.querySelector(".background").src = "/img/background-phone.jpg";
 }
 function move() {
   const input = document.querySelector(".input > input");
