@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+      <audio id="audioPlayer" controls>
+        <source src="/img/motdoi.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
+      </audio>
     <div id="modal">
       <div id="backmodal"></div>
       <div id="framemodal">
@@ -25,7 +29,7 @@
           <div>Hân sử dụng laptop để cảm nhận sâu sắc hơn lời chúc của cá nhá :D</div>
         </div>
         <div id="endmodal">
-          <div>Đã rõ </div>
+          <div onclick="playMusic()">Đã rõ </div>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
@@ -46,7 +50,18 @@
       </div>
     </div>
     <div id="universe"></div>
+    <script>
+      function playMusic() {
+        var audio = document.getElementById("audioPlayer");
+        audio.play();
+      }
 
+        // Hàm để tạm dừng nhạc
+        function pauseMusic() {
+          var audio = document.getElementById("audioPlayer");
+          audio.pause();
+        }
+      </script>
     <script src="/script/Colors.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
     <script src="https://unpkg.com/three@0.104.0/examples/js/controls/OrbitControls.js"></script>
