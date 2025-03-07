@@ -61,6 +61,9 @@
       width: 100%;
     }
   }
+    #firework>.intro2{
+        top: 45%;
+    }
   #firework .intro {
     font-size: 16px !important;
   }
