@@ -35,6 +35,6 @@ function init() {
 let name = localStorage.getItem("name");
 document.querySelector(
   "#firework .intro"
-).innerHTML = ` <div class="text"><img src="../public/img/roseLeft.png" alt="" class="rose" /> <div>Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá.<br> <p style="font-size:55%;">Chúc ${name} những lời chúc tốt đẹp nhất, luôn xinh đẹp, hạnh phúc và vui vẻ không chỉ ngày 8/3 mà cả những ngày khác nữa. </p> </div> <img src="../public/img/rose.png" alt="" class="rose"/><div>
+).innerHTML = ` <div class="text"><img src="/img/roseLeft.png" alt="" class="rose" /> <div>Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá.<br> <p style="font-size:55%;">Chúc ${name} những lời chúc tốt đẹp nhất, luôn xinh đẹp, hạnh phúc và vui vẻ không chỉ ngày 8/3 mà cả những ngày khác nữa. </p> </div> <img src="/img/rose.png" alt="" class="rose"/><div>
  
 `;
