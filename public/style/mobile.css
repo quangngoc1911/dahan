@@ -67,18 +67,67 @@
   #firework .main {
     font-size: 7px !important;
   }
-  #modal #bodymodal{
+    #modal #bodymodal {
     font-size: 18px;
   }
-  #backgroundFlower{
-    height:100%;
-    width:100%;
-    top:70%;
+    #backgroundFlower {
+      height: 100%;
+      width: 100%;
+      top: 70%;
     transform: translateY(-50%);
   }
-  #backgroundFlower>img{
-    height:80%;  
+    #backgroundFlower>img {
+      /* height:80%;   */
     /* width: 100%; */
     opacity: 0.7;
   }
+    #roseFlowerLeft img {
+      width: 70%;
+    }
+  
+    #roseFlower img {
+      width: 70%;
+    }
+  
+    #roseFlowerLeft {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  
+    #roseFlowerBottom {
+      /* display: none; */
+    }
+  
+    .rose {
+      width: 12%;
+    }
+  
+    .roseFlower {
+      width: 40%;
+    }
+  
+    #roseFlowerBottom {
+      left: 260px;
+    }
+  
+    #roseFlowerBottom img {
+      width: 40%;
+    }
+  
+    .imagecenter {
+      height: 200px;
+    }
+  
+    #firework>.intro {
+      top: 60%;
+    }
+  
+    .intro {
+      width: 80%;
+    }
+  
+    #roseFlower {
+      right: -32px;
+      margin-top: 20px;
+    }
 }
