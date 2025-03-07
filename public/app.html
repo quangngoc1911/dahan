@@ -1,74 +1,106 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chúc mừng ngày 8/3</title>
-    <link rel="icon" href="/img/flower.png" />
-    <link rel="stylesheet" href="/style/index.css" />
-    <link rel="stylesheet" href="/style/mobile.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chúc mừng ngày 8/3</title>
+  <link rel="icon" href="/img/flower.png" />
+  <link rel="stylesheet" href="/style/index.css" />
+  <link rel="stylesheet" href="/style/mobile.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Ẩn iframe để không hiển thị video */
+    #audioPlayer {
+      display: none;
+    }
+  </style>
   </head>
-  <body>
-      <audio id="audioPlayer" controls>
-        <source src="/img/motdoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
-      </audio>
-    <div id="modal">
-      <div id="backmodal"></div>
-      <div id="framemodal">
-        <div id="headermodal"><div>oét ô oét</div></div> 
-        <!-- gợi ý nho nhỏ -->
-        <div id="bodymodal">
-          <div>Hân sử dụng laptop để cảm nhận sâu sắc hơn lời chúc của cá nhá. Có nhạc nữa nên là bật loa hay đeo tai nghe củm đựt nhaaa :D</div>
+
+<body>
+  <audio id="audioPlayer" controls>
+    <source src="/img/motdoi.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
+  </audio>
+  <div id="modal">
+    <div id="backmodal"></div>
+    <div id="framemodal">
+      <div id="headermodal">
+        <div>oét ô oét</div>
+      </div>
+      <!-- gợi ý nho nhỏ -->
+      <div id="bodymodal">
+        <div>
+          Hân sử dụng laptop để cảm nhận sâu sắc hơn lời chúc của cá nhá. Có nhạc nữa nên là bật loa hay đeo tai nghe
+          củm đựt
+          nhaaa :D
+        </div>
         </div>
         <div id="endmodal">
-          <div onclick="playMusic()">Đã rõ </div>
-          <i class="fa-solid fa-arrow-right"></i>
+        <div onclick="playMusic()">Đã rõ</div>
+        <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
+        </div>
+        </div>
+        <div id="clickMe" class="closedis">
+          <div>Click tiếp nào Hân ui!</div>
+        </div>
+        <div id="firework">
+    <div id="roseFlowerLeft" class="roseFlower">
+      <img src="/img/roseRight.png" alt="" />
     </div>
-    <div id="clickMe" class="closedis">
-      <div>Click tiếp nào Hân ui!</div>
+    <div id="roseFlower" class="roseFlower">
+      <img src="/img/roseRight.png" alt="" />
     </div>
-    <div id="firework">
-      <div id="backgroundFlower"><img src="/img/flowerbackground.png" alt=""></div>
-      <div class="intro bounce-top" >
-        Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá
-      </div>
-      <div class="main">
-        Riêng Nguyễn Thị Kim Trang (Tây Lỳ) thì tớ chúc cậu sẽ luôn nở nụ cười trên môi dù là chuyện gì!!!<br>
-        Xin lỗi vì điều 💞tớ sắp nói đây <br>
-        Chỉ riêng Trang tớ sẽ không dành lời chúc xinh đẹp được bởi trong mắt tớ Trang đẹp hơn bao người con gái khác<br>
-        Mãi iu 🫶
-      </div>
+    <div id="backgroundFlower" class="intro2">
+      <img src="/img/centerFlower.png" alt="" class="imagecenter" />
     </div>
-    <div id="universe"></div>
-    <script>
-      function playMusic() {
-        var audio = document.getElementById("audioPlayer");
-        audio.play();
-      }
+    
+    <div class="intro bounce-top">
+      Chúc mừng ngày 8/3 mãi xinh đẹp như bông hồng nhá
+    </div>
 
-        // Hàm để tạm dừng nhạc
-        function pauseMusic() {
-          var audio = document.getElementById("audioPlayer");
-          audio.pause();
-        }
-      </script>
-    <script src="/script/Colors.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.104.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="/script/three.min.js"></script>
-    <script src="/script/universe.js"></script>
-    <script src="/script/three.js"></script>
-    <script src="/script/index.js"></script>
+    <div class="main">
+      Riêng Nguyễn Thị Kim Trang (Tây Lỳ) thì tớ chúc cậu sẽ luôn nở nụ cười
+      trên môi dù là chuyện gì!!!<br />
+      Xin lỗi vì điều 💞tớ sắp nói đây <br />
+      Chỉ riêng Trang tớ sẽ không dành lời chúc xinh đẹp được bởi trong mắt tớ
+      Trang đẹp hơn bao người con gái khác<br />
+      Mãi iu 🫶
+      </div>
+    <div id="roseFlowerBottom">
+      <img src="/img/standingFlowerBouquet.png" alt="" />
+    </div>
+  </div>
+  <div id="universe"></div>
+  <script>
+    function playMusic() {
+      var audio = document.getElementById("audioPlayer");
+
+      audio.play();
+    }
+      // Hàm để tạm dừng nhạc
+      function pauseMusic() {
+        var audio = document.getElementById("audioPlayer");
+        audio.pause();
+      }
+    </script>
+  <script src="/script/Colors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.104.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <script src="/script/three.min.js"></script>
+  <script src="/script/universe.js"></script>
+  <script src="/script/three.js"></script>
+  <script src="/script/index.js"></script>
   </body>
+
 </html>
